@@ -5,13 +5,15 @@
     font-family: 'Josefin Sans', sans-serif;
     scroll-behavior: smooth;
     scroll-padding-top: 56px;
+    color: aliceblue;
 }
 
 /* background animation */
 body{
     height: 714px;
     width: 100%;
-    background: linear-gradient(45deg, #000,#ab20fd, #7d12ff, #ab20fd,  #200589, #1c1c1c);
+    /* background: linear-gradient(45deg, #000,#ab20fd, #7d12ff, #ab20fd,  #200589, #1c1c1c); */
+    background: linear-gradient(45deg, #1f1c1d,#353334, #4c494a, #626061,  #4c494a, #353334, #1f1c1d);
     background-size: 300% 300%;
 
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
@@ -35,7 +37,8 @@ body{
 
 /* navbar */
 header{
-    /* position: fixed !important; */
+    position: fixed !important;
+    color: antiquewhite;
     width: 100% !important;
     top: 0 !important;
     right: 0 !important;
@@ -44,24 +47,31 @@ header{
     align-items: center !important;
     justify-content: space-between !important;
     background: transparent !important;
-    padding: 25px 15% !important;
+    /* padding: 25px 15% !important; */
+    padding-bottom: 50px;
     transition-duration: .3s !important;
+    /* border-bottom: solid #000 1px; */
+    /* padding-bottom: -90px; */
+    /* background-color: #353334;    */
 }
 
 .logo {
     font-size: 30px !important;
     font-weight: bold !important;
     letter-spacing: 1px !important;
-    border-color: black;
-}
+    /* border: solid 1px black;
+    border-radius: 40%; */
+    color: antiquewhite;
     
+}
 
 .nav-link li{
     position: relative;
+    
 }
 
 .nav-link a {
-    color: black;
+    color: antiquewhite;
     font-weight: bold;
     font-size: 16px;
     padding: 10px 20px;
@@ -72,7 +82,7 @@ header{
     position: absolute;
     width: 0;
     height: 2px;
-    background: #2e0041;
+    background: #9D00FF;
     left: 0;
     bottom: -4px;
     transition: ease .40s;
@@ -80,12 +90,150 @@ header{
 
 .nav-link a:hover::after {
     width: 100%;
-    color: #ab20fd;
-    font-size: larger;
+    
+}
+
+.nav-link a:hover {
+    color:#1f1c1d;
+    background-color: #f3c4fb;
 }
 
 .navbar-toggler-icon {
     font-size: 32px;
     color: #000;
+    z-index: 10001;
     cursor: pointer;
+    /* display: none; */
 }
+
+/* header.position-sticky {
+    padding: 12px;
+    background: #9D00FF;
+} */
+
+/* home */
+.home-banner {
+    height: 714px;
+    width: 100%;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+}
+
+.home-text {
+    padding: 120px 15%;
+}
+
+.home-text h1{
+    margin: 20px 0px 20px;
+    letter-spacing: 1.5px;
+    font-weight: bolder;
+    /* text-shadow: #9D00FF; */
+}
+
+span {
+    color: #9d4edd;
+}
+
+.home-text h3 {
+    font-size: 25px;
+    margin-bottom: 55px;
+}
+
+.home-text h4{
+    color: #1c1c1c;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.d-btn{
+    background-color: #9d4edd;
+    padding: 14px;
+    color: #000;
+    font-weight: 27px;
+    position: relative;
+    border-radius: 19px;
+    box-shadow: 0px 0px 6px #9D00FF, 0px 0px 14px #000;
+    cursor: pointer;
+    top: -10px;
+}
+
+.d-btn a:link{
+    color: black;
+    text-decoration: none;
+}
+
+.d-btn a:active{
+    color: #000;
+}
+
+.d-btn a:hover{
+    color: #1c1c1c;
+}
+
+.d-btn a:visited{
+    color: #1c1c1c;
+}
+
+/* about */
+.about-sec {
+    background: #4c494a;
+    border-radius: 50px;
+    border-left: -50px;
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    align-items: center;
+    grid-gap: 32px;
+}
+
+.about-img img{
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-text h2 {
+    font-size: 60px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.about-text pre{
+    color:#e7c6ff;
+    letter-spacing: 1px;
+    line-height: 29px;
+    max-width: 590px;
+    font-size:medium;
+    margin-bottom: 39px;
+}
+
+/* work/education/skill */
+.wes-h,.wes-p, .wes-h-h {
+    color: azure;
+    letter-spacing: 1px;
+    line-height: 29px;
+    font-size: medium;
+}
+
+.wes-h {
+    font-weight: bolder;
+    font-size: 30px;
+    text-decoration: underline #1c1c1c;
+    padding: 10px;
+}
+
+.wes-h-h {
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+
+.lang img {
+        width: 50px;
+        height: 50px;
+}
+
