@@ -478,3 +478,24 @@ span {
   margin-top: 10px;
   margin-bottom: 50px;
 }
+
+@media screen and (max-width: 576px) { 
+  .img-thumbnail{
+    /* width: 150px;
+    height: 100px; */
+    display: none;
+  }
+  .about-sec{
+    /* align-items: center; */
+    
+  }
+  .about-text{
+    margin-right: 5rem;
+  }
+  .d-btn{
+    /* align-items: center; */
+    margin-right: 9rem;
+    margin-left: 0;
+  }
+  
+}
