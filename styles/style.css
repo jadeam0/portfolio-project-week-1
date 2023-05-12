@@ -528,30 +528,28 @@ background: rgba(10, 10, 10, .45);
   .carPar {
     padding: 0 40px;
   }
-  .contact-frm {
-    width: 80%;
-    margin: auto;
+  .cont-frm {
+    width: 90% !important;
+    margin: 0 auto !important;
   }
-
-  
 }
 
 @media only screen and (max-width: 400px) {
   .carImg {
     width: 90% !important;
   }
-  .contact-frm {
-    width: 95%;
+  .cont-frm {
+    width: 90% !important;
+    margin: 0 auto !important;
+  }
+  .timeline-list{
     margin: auto;
   }
 }
 
-
-.about-text{
-  margin-right: 5rem;
-}
-.d-btn{
-  /* align-items: center; */
-  margin-right: 9rem;
-  margin-left: 0;
+@media only screen and (max-width: 950px){
+  .cont-frm {
+    width: 80% !important;
+    margin: 0 auto !important;
+  }
 }
